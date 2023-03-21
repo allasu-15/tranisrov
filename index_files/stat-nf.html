@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>TimeWharp | Only Smart Investments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./flag-icon.min.css" type="text/css">
+    <link rel="stylesheet" href="./bootstrap-icons.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="canonical" href="https://timewharp.com/stat-nf">
+    <link rel="icon" type="image/png" href="./themes/w2y-landingbuilder/assets/images/favicon.png">
+    <meta name="theme-color" content="#fafafa">
+
+    <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
+</head>
+
+<body class="trading-body">
+
+    <div class="overlay hidden"></div>
+
+    <div id="trading-container" class=" demo">
+
+        <div class="top-alert top-alert-trading top-alert-trading-in">
+            <div class="top-alert-title">
+                Trading System™ active </div>
+            <div class="top-loading-container">
+                <img src="./top-loading.gif">
+            </div>
+        </div>
+
+        <div class="header header-trading header-trading-down">
+            <div style="height: 20px;">
+
+            </div>
+            <div class="balance-title">
+                Balance </div>
+            <div class="balance-text">
+                $<span class="balance-amount" data-from="0" data-to="250" data-speed="1000" data-refresh-interval="50" data-value="252.32">252.32</span> </div>
+
+            <div class="controls-container clearfix">
+                <div class="controls-col-1">
+                    <label>
+                        Amount per Trade </label>
+                    <select class="form-select form-select-sm" id="trade-invest">
+                        <option value="1.00">
+                            $1.00 </option>
+                        <option value="2.00" selected="selected">
+                            $2.00 </option>
+                        <option value="5.00">
+                            $5.00 </option>
+                        <option value="10.00">
+                            $10.00 </option>
+                        <option value="20.00">
+                            $20.00 </option>
+                        <option value="50.00">
+                            $50.00 </option>
+                        <option value="100.00">
+                            $100.00 </option>
+                    </select>
+                </div>
+                <div class="controls-col-2">
+                    <label>
+                        Multiplicator </label>
+                    <select class="form-select form-select-sm" id="trade-multiplicator">
+                        <option value="50">X50</option>
+                        <option value="100">X100</option>
+                        <option value="200">X200</option>
+                        <option value="500">X500</option>
+                        <option value="1000">X1000</option>
+                    </select>
+                </div>
+                <div class="controls-col-3">
+                    <label>&nbsp;</label>
+                    <input class="tgl tgl-ios" id="start-trading-btn" type="checkbox">
+                    <label class="tgl-btn" for="start-trading-btn"></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="trades-container trades-container-down">
+            <div class="trade-container new-trade" id="6">
+                <div class="trade trade-in">
+                    <div class="clearfix">
+                        <div class="trade-col-1">
+                            <div class="trade-loading">
+                                <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+                            </div>
+                            <div class="blue-check-mark hidden"><i class="bi bi-check"></i></div>
+                        </div>
+                        <div class="trade-col-2">
+                            <div class="trade-name">Bitcoin/GBP</div>
+                            <div class="trade-price trade-neg"><span class="currency-symbol">$</span><span class="trade-amount" data-value="-0.03">-0.03</span><span class="currency-symbol"></span></div>
+                        </div>
+                        <div class="trade-col-3">
+                            <div class="trade-chart-container">
+                                <div class="trade-chart trade-chart-moving clearfix" style="left: -744px;"></div>
+                            </div>
+                        </div>
+                        <div class="trade-col-4">
+                            <div class="arrow-right">›</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trade-container new-trade" id="5">
+                <div class="trade trade-in">
+                    <div class="clearfix">
+                        <div class="trade-col-1">
+                            <div class="trade-loading">
+                                <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+                            </div>
+                            <div class="blue-check-mark hidden"><i class="bi bi-check"></i></div>
+                        </div>
+                        <div class="trade-col-2">
+                            <div class="trade-name">Bitcoin/CAD</div>
+                            <div class="trade-price trade-pos"><span class="currency-symbol">$</span><span class="trade-amount" data-value="0.52">0.52</span><span class="currency-symbol"></span></div>
+                        </div>
+                        <div class="trade-col-3">
+                            <div class="trade-chart-container">
+                                <div class="trade-chart trade-chart-moving clearfix" style="left: -231px;"></div>
+                            </div>
+                        </div>
+                        <div class="trade-col-4">
+                            <div class="arrow-right">›</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trade-container new-trade" id="4">
+                <div class="trade trade-in">
+                    <div class="clearfix">
+                        <div class="trade-col-1">
+                            <div class="trade-loading hidden">
+                                <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+                            </div>
+                            <div class="blue-check-mark"><i class="bi bi-check"></i></div>
+                        </div>
+                        <div class="trade-col-2">
+                            <div class="trade-name">Ethereum/CHF</div>
+                            <div class="trade-price trade-pos"><span class="currency-symbol">$</span><span class="trade-amount" data-value="0.70">0.70</span><span class="currency-symbol"></span></div>
+                        </div>
+                        <div class="trade-col-3">
+                            <div class="trade-chart-container">
+                                <div class="trade-chart trade-chart-moving clearfix" style="left: -90px;"></div>
+                            </div>
+                        </div>
+                        <div class="trade-col-4">
+                            <div class="arrow-right">›</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trade-container new-trade" id="3">
+                <div class="trade trade-in">
+                    <div class="clearfix">
+                        <div class="trade-col-1">
+                            <div class="trade-loading hidden">
+                                <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+                            </div>
+                            <div class="blue-check-mark"><i class="bi bi-check"></i></div>
+                        </div>
+                        <div class="trade-col-2">
+                            <div class="trade-name">Ethereum/GBP</div>
+                            <div class="trade-price trade-pos"><span class="currency-symbol">$</span><span class="trade-amount" data-value="1.62">1.62</span><span class="currency-symbol"></span></div>
+                        </div>
+                        <div class="trade-col-3">
+                            <div class="trade-chart-container">
+                                <div class="trade-chart trade-chart-moving clearfix" style="left: -285px;"></div>
+                            </div>
+                        </div>
+                        <div class="trade-col-4">
+                            <div class="arrow-right">›</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trade-container new-trade" id="2">
+                <div class="trade trade-in">
+                    <div class="clearfix">
+                        <div class="trade-col-1">
+                            <div class="trade-loading">
+                                <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+                            </div>
+                            <div class="blue-check-mark hidden"><i class="bi bi-check"></i></div>
+                        </div>
+                        <div class="trade-col-2">
+                            <div class="trade-name">ChainLink/AUD</div>
+                            <div class="trade-price trade-pos"><span class="currency-symbol">$</span><span class="trade-amount" data-value="0.36">0.36</span><span class="currency-symbol"></span></div>
+                        </div>
+                        <div class="trade-col-3">
+                            <div class="trade-chart-container">
+                                <div class="trade-chart trade-chart-moving clearfix" style="left: -617px;"></div>
+                            </div>
+                        </div>
+                        <div class="trade-col-4">
+                            <div class="arrow-right">›</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trade-container new-trade" id="1">
+                <div class="trade trade-in">
+                    <div class="clearfix">
+                        <div class="trade-col-1">
+                            <div class="trade-loading">
+                                <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+                            </div>
+                            <div class="blue-check-mark hidden"><i class="bi bi-check"></i></div>
+                        </div>
+                        <div class="trade-col-2">
+                            <div class="trade-name">Stellar/CAD</div>
+                            <div class="trade-price trade-pos"><span class="currency-symbol">$</span><span class="trade-amount" data-value="0.23">0.23</span><span class="currency-symbol"></span></div>
+                        </div>
+                        <div class="trade-col-3">
+                            <div class="trade-chart-container">
+                                <div class="trade-chart trade-chart-moving clearfix" style="left: -385px;"></div>
+                            </div>
+                        </div>
+                        <div class="trade-col-4">
+                            <div class="arrow-right">›</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trade-container">
+                <div class="trade-wrapper">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="app-nav clearfix">
+            <div class="app-nav-item">
+                <i class="bi bi-house-door-fill"></i>
+            </div>
+            <div class="app-nav-item">
+                <i class="bi bi-globe"></i>
+            </div>
+            <div class="app-nav-item">
+                <i class="bi bi-bar-chart-fill active"></i>
+            </div>
+            <div class="app-nav-item">
+                <i class="bi bi-credit-card-fill"></i>
+            </div>
+            <div class="app-nav-item">
+                <i class="bi bi-gear-fill"></i>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./jquery.min.js"></script>
+    <script src="./bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="./jquery.countTo.js"></script>
+
+    <script src="./plugins.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        var number_format = "x,xxx.xx";
+
+        var init_trade = 1000;
+        var new_trade_min = 3000;
+        var new_trade_max = 5000;
+        var rpt_min = 5;
+        var rpt_max = 10;
+        var pm_edge = 30;
+        tradeChartMoving();
+
+        initAutoTrading();
+        autoTrading();
+
+    </script>
+
+
+    <style>
+        .tb_button {
+            padding: 1px;
+            cursor: pointer;
+            border-right: 1px solid #8b8b8b;
+            border-left: 1px solid #FFF;
+            border-bottom: 1px solid #fff;
+        }
+
+        .tb_button.hover {
+            borer: 2px outset #def;
+            background-color: #f8f8f8 !important;
+        }
+
+        .ws_toolbar {
+            z-index: 100000
+        }
+
+        .ws_toolbar .ws_tb_btn {
+            cursor: pointer;
+            border: 1px solid #555;
+            padding: 3px
+        }
+
+        .tb_highlight {
+            background-color: yellow
+        }
+
+        .tb_hide {
+            visibility: hidden
+        }
+
+        .ws_toolbar img {
+            padding: 2px;
+            margin: 0px
+        }
+
+    </style>
+</body>
+
+</html>
